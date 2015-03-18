@@ -2,6 +2,8 @@ MRuby::Build.new do |conf|
   toolchain :gcc
   conf.gembox 'default'
   conf.gem :git => 'https://github.com/iij/mruby-io.git'
-  conf.gem :git => 'https://github.com/iij/mruby-dir.git'
-  conf.gem '../mruby-mrbgem-template'
+  conf.gem :git => 'https://github.com/iij/mruby-socket.git'
+  conf.gem :git => 'https://github.com/iij/mruby-pack.git'
+  conf.gem :git => 'https://github.com/iij/mruby-test.git'
+  conf.gem '../mruby-mqtt-client'
 end
